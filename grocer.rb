@@ -33,7 +33,7 @@ while i < cart.length
   end 
   i += 1 
 end 
-binding.pry 
+#binding.pry 
 my_array
 end
 
