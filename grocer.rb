@@ -46,7 +46,7 @@ while i < coupons.length do
   couponed_item_name = "#{coupons[i][:item]} W/COUPON"
   #binding.pry 
   cart_item_with_coupon = find_item_by_name_in_collection(couponed_item_name, cart)
-  if cart_item && cart_item[:count] >= coupons[i][:num]
+  if cart_item && cart_item[:count] + 1 >= coupons[i][:num]
     #binding.pry 
     if cart_item_with_coupon
       cart_item_with_coupon[:count] += coupons[i][:num]
