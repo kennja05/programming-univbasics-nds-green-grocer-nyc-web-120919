@@ -38,7 +38,8 @@ my_array
 end
 
 def apply_coupons(cart, coupons)
-#binding.pry 
+consolidate_cart(cart)
+binding.pry 
 i = 0 
 while i < coupons.length do 
   current_coupon = coupons[i]
