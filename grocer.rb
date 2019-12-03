@@ -39,7 +39,7 @@ end
 
 def apply_coupons(cart, coupons)
 #consolidate_cart(cart)
-binding.pry 
+#binding.pry 
 i = 0 
 while i < coupons.length do 
   current_coupon = coupons[i]
